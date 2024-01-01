@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lusitana&family=Sevillana&family=Style+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sevillana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins&family=Sevillana&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
 
 *{
     padding: 0;
@@ -30,24 +30,28 @@ h1,h2,h3,h4{
     font-family: 'Poppins', sans-serif;
 }
 
+.noto{
+  font-family: 'Noto Sans', sans-serif;
+}
+
 @keyframes anvil {
   0% {
     transform: scale(1) rotateZ(0)  translateX(0);
     opacity: 1;
     box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-    z-index: 9000;
+    z-index: 5000;
   }
   1% {
     transform: scale(0.75) rotateZ(-30deg) translateX(-600px);
     opacity: 1;
     box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-    z-index: 9000;
+    z-index: 5000;
   }
   100% {
     transform: scale(1) rotateZ(0) translateX(0);
     opacity: 1;
     box-shadow: 0 0 500px rgba(241, 241, 241, 0);
-    z-index: 9000;
+    z-index: 5000;
   }
 }
 @keyframes anvil2 {
@@ -71,103 +75,43 @@ h1,h2,h3,h4{
   0% {
     transform: scale(1) rotateZ(10deg)  translateX(0);
     opacity: 1;
-    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    box-shadow: 0 0 0 rgba(97, 96, 96, 0);
+    z-index: 5000;
   }
   1% {
     transform: scale(0.75) rotateZ(20deg) translateX(-100px);
     opacity: 1;
-    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    z-index: 5000;
   }
   100% {
     transform: scale(1) rotateZ(0) translateX(0);
     opacity: 1;
-    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+    box-shadow: 0 0 500px rgba(255, 255, 255, 0);
+    z-index: 5000;
   }
 }
 .popup1 {
   animation: anvil 0.9s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
-  z-index: 200;
+  z-index: 5000;
   opacity: 1;
   /* position: relative; */
 }
 
 .popup2 {
   animation: anvil2 0.9s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
-  z-index: 200;
+  z-index: 5000;
   opacity: 1;
   /* position: relative; */
 }
 
 .popup3 {
   animation: anvil3 0.9s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
-  z-index: 200;
+  z-index: 5000;
   opacity: 1;
   /* position: relative; */
 }
 
-
-@keyframes anvili {
-  0% {
-    transform:translateY(0) rotate(-30deg);
-    opacity: 1;
-    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-  }
-  50% {
-    transform: translateY(-30px) rotate(-30deg);
-    opacity: 1;
-    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-  }
-  100% {
-    transform:translateY(0) rotate(-30deg);
-    opacity: 1;
-    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
-  }
-}
-@keyframes anvili2 {
-  0% {
-    transform:translateY(0) rotate(30deg);
-    opacity: 1;
-    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-  }
-  50% {
-    transform: translateY(-30px) rotate(30deg);
-    opacity: 1;
-    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-  }
-  100% {
-    transform:translateY(0) rotate(30deg);
-    opacity: 1;
-    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
-  }
-}
-@keyframes anvili3 {
-  0% {
-    transform:translateY(0) rotate(10deg);
-    opacity: 1;
-    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-  }
-  50% {
-    transform: translateY(-30px) rotate(10deg);
-    opacity: 1;
-    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-  }
-  100% {
-    transform:translateY(0) rotate(10deg);
-    opacity: 1;
-    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
-  }
-}
-
-.first-box {
-  animation: anvili 2s ease-in-out infinite; /* Use a specific duration (2s in this case) */
-}
-.second-box {
-  animation: anvili2 2s ease-in-out infinite; /* Use a specific duration (2s in this case) */
-}
-
-.third-box {
-  animation: anvili3 2s ease-in-out infinite; /* Use a specific duration (2s in this case) */
-}
 
 
 .overlay {
@@ -177,7 +121,7 @@ h1,h2,h3,h4{
   width: 100%;
   height: 100%;
   background-color: rgba(64, 64, 64, 0.5); /* Adjust the last value (0.5) for opacity */
-  z-index: 100; /* Adjust the z-index to make sure it overlays other elements */
+  z-index: 2000; /* Adjust the z-index to make sure it overlays other elements */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,3 +136,118 @@ h1,h2,h3,h4{
 }
 
 
+.cloud1{
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border-radius: 100px;
+  border: 2px solid black;
+  background-color: white;
+  z-index: 20;
+}
+
+.cloud1::before{
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 40px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 90px 0 0 30px white;
+}
+
+.cloud1::after{
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  right: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.star_12 {
+  background: rgb(255, 251, 251);
+  width: 380px;
+  height: 420px;
+  position: relative;
+  border-radius: 50px;
+  transform: rotate(40deg);
+}
+
+.star_12:before,
+.star_12:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 420px;
+  width: 380px;
+  background: rgb(252, 250, 250);
+  border-radius: 50px;
+}
+
+.star_12:before {
+  transform: rotate(60deg);
+}
+.star_12:after {
+  transform: rotate(30deg);
+}
+
+
+.up-down{
+  animation: upDown 2s ease-in-out infinite;
+}
+.up-down2{
+  animation: upDown2 2s ease-in-out infinite;
+}
+.up-down3{
+  animation: upDown3 2s ease-in-out infinite;
+}
+@keyframes upDown2 {
+  0% {
+    transform:scale(.93) rotate(30deg);
+   
+  }
+  50% {
+    transform: scale(1) rotate(30deg);
+   
+  }
+  100% {
+    transform:scale(.93) rotate(30deg);
+    
+  }
+}
+@keyframes upDown {
+  0% {
+    transform:scale(.93) rotate(-30deg);
+   
+  }
+  50% {
+    transform: scale(1) rotate(-30deg);
+   
+  }
+  100% {
+    transform:scale(.93) rotate(-30deg);
+    
+  }
+}
+@keyframes upDown3 {
+  0% {
+    transform:scale(.93) rotate(15deg);
+   
+  }
+  50% {
+    transform: scale(1) rotate(15deg);
+   
+  }
+  100% {
+    transform:scale(.93) rotate(15deg);
+    
+  }
+}

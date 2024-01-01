@@ -14,7 +14,7 @@ const Navbar = () => {
   console.log(menuOpen);
 
   return (
-    <nav className="p-7 border-2 box-border bg-slate-50 sticky top-0 left-0 shadow-black z-[100]">
+    <nav className="p-7 border-b-2 border-gray-700 bg-[#090909] text-white sticky top-0 left-0 z-[3000]">
       <div className="container mx-auto flex justify-between items-center mt-2">
         <Link
           href="/hero"
@@ -43,7 +43,7 @@ const Navbar = () => {
                 className="mr-12 mt-4"
                 onClick={() => setMenuOpen(false)}
               >
-                <li className="uppercase font-bold text-gray-600 max-sm:hover:text-gray-100 hover:text-gray-800 hover:font-extrabold">
+                <li className="uppercase font-bold text-gray-300 max-sm:hover:text-gray-100 hover:text-gray-100 hover:font-extrabold">
                   {e.title}
                 </li>
               </Link>

@@ -16,27 +16,28 @@ import Aimhero from "../components/Aimhero";
 
 const Hero = () => {
   return (
-    <div className="overflow-hidden bg-slate-50 ">
+    <>
       <Navbar />
+    <div className="overflow-hidden bg-black">
       <Animation>
         <main>
           <div className="w-full auto my-[12rem] max-sm:min-h-[700px] max-sm:mb-[5rem] flex justify-around max-lg:block items-center p-4 max-[800px]:mt-[6rem]">
             <MotionDiv {...slideAnimation("left")}>
               <h2
-                className="text-[5.5rem] text-gray-700 font-bold leading-[8rem] max-[800px]:leading-[6.5rem]"
+                className="text-[5.5rem] text-white font-bold leading-[8rem] max-[800px]:leading-[6.5rem]"
                 {...headTextAnimation}
               >
                 Finding Difficulties
-                <br /> with <span className="text-red-400">D</span>
-                <span className="text-green-500">S</span>
-                <span className="text-yellow-400">A</span>
+                <br /> with <span className="text-red-600">D</span>
+                <span className="text-green-600">S</span>
+                <span className="text-yellow-600">A</span>
               </h2>
-              <h3 className="text-3xl ml-5 text-gray-700 mt-8 italic max-[800px]:text-2xl">
+              <h3 className="text-3xl ml-5 text-gray-300 mt-8 italic max-[800px]:text-2xl">
                 This is the right place...
               </h3>
             </MotionDiv>
             <MotionDiv {...headContentAnimation} className="max-sm:my-16">
-              <Image src={img} alt="dsa" width={450} height={450} />
+              <Image src={img} alt="dsa" width={450} height={450}/>
             </MotionDiv>
           </div>
         </main>
@@ -46,6 +47,7 @@ const Hero = () => {
       <Aimhero />
       <Footer />
     </div>
+    </>
   );
 };
 
