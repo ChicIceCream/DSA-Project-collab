@@ -4,13 +4,29 @@ import Navbar from '../components/Navbar'
 
 const page = () => {
   return (
-    <div>
+    <main className='bg-black w-full min-h-[100vh]'>
       <Navbar/>
-      <h1>List of Problems</h1>
-      <p><Link href="problem/1">problem 1</Link></p>
-      <p>problem 2</p>
-      <p>problem 3</p>
-    </div>
+      <div>
+        <div>
+          <button>Difficulty</button>
+        </div>
+
+        <div>
+          <ul>
+            <li>Problem 1</li>
+            <li>Problem 2</li>
+            <li>Problem 3</li>
+            <li>Problem 4</li>
+            <li>Problem 5</li>
+            <li>Problem 6</li>
+            <li>Problem 7</li>
+            <li>Problem 8</li>
+            <li>Problem 9</li>
+            <li>Problem 10</li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
   )
 }
