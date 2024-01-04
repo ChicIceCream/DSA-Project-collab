@@ -12,7 +12,7 @@ const Abouthero = () => {
       <h1 className="text-8xl font-extrabold mb-10 max-lg:text-7xl text-center p-2 text-white">
         About US
       </h1>
-      <div className="w-full h-auto bg-[#0e0e2a] flex justify-around p-10 items-center max-sm:block  max-lg:block">
+      <div className="w-full h-auto bg-[#33333d] flex justify-around p-10 items-center max-sm:block  max-lg:block">
         <div className="flex my-8">
           <span className="block w-[230px] h-[230px] max-sm:w-[200px] max-sm:h-[200px] rounded-full overflow-hidden border-4 border-white z-40">
             <Image
@@ -47,7 +47,7 @@ const Abouthero = () => {
           </p>
 
           <a href="/about" className="opacity-[80%] hover:opacity-[100%]">
-            <h4 className="text-2xl font-bold text-red-400 flex items-center mt-8">
+            <h4 className="text-2xl font-bold text-white flex items-center mt-8">
               More
               <span className="ml-2 text-3xl animate-[wiggle_1s_ease-in-out_infinite]">
                 <HiOutlineArrowNarrowRight />

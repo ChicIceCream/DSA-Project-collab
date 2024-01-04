@@ -8,7 +8,7 @@ import {
   headTextAnimation,
   slideAnimation,
 } from "../motion";
-import img from "../assests/home-img.jpg";
+import img from "../assests/home-img-removebg-preview.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Abouthero from "../components/Abouthero";
@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <>
       <Navbar />
-    <div className="overflow-hidden bg-black">
+    <div className="overflow-hidden bg-[#131313]">
       <Animation>
         <main>
           <div className="w-full auto my-[12rem] max-sm:min-h-[700px] max-sm:mb-[5rem] flex justify-around max-lg:block items-center p-4 max-[800px]:mt-[6rem]">
@@ -37,7 +37,7 @@ const Hero = () => {
               </h3>
             </MotionDiv>
             <MotionDiv {...headContentAnimation} className="max-sm:my-16">
-              <Image src={img} alt="dsa" width={450} height={450}/>
+              <Image src={img} alt="dsa" width={450} height={450} className="bg-gray-700 rounded-full p-5"/>
             </MotionDiv>
           </div>
         </main>
