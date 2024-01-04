@@ -13,7 +13,7 @@ const page = ({params} : { params : {problemId: any}}) => {
           <span className='absolute ml-14 top-5 bg-[#f0ae4c] text-black font-bold text-xl px-4 py-2 rounded-3xl'>{difficulty}</span>
         </h1>  
         <p className='text-3xl text-white pt-12 pb-9'>{description}</p>
-        {testcases?.map((e, i):any => (
+        {testcases?.map((e:any, i):any => (
           <div className='text-gray-300 font-bold text-2xl py-3'>
             <p className='mb-2'>Input : {e.input[0]}, {e.input[1]}</p>
             <p>Output : {e.output}</p>
