@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sevillana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins&family=Sevillana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Roboto:ital@0;1&display=swap');
 
 *{
     padding: 0;
@@ -16,6 +17,10 @@
 
 .hola{
     font-family: 'Sevillana', cursive;
+}
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,h2,h3,h4{
