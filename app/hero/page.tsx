@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <>
       <Navbar />
-    <div className="overflow-hidden bg-green-500">
+    <div className="overflow-hidden bg-blue-500">
       <Animation>
         <main>
           <div className="w-full auto my-[12rem] max-sm:min-h-[700px] max-sm:mb-[5rem] flex justify-around max-lg:block items-center p-4 max-[800px]:mt-[6rem]">
