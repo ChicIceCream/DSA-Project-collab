@@ -18,12 +18,11 @@ const Footer = () => {
             <form action="submit" className='flex flex-col'>
               <h1 className='text-[1.1rem] text-slate-300 pt-4 pb-1'>Share Your Thoughts : </h1>
               <input type="email" className='mb-3 rounded-md text-black w-[300px] text-[15px] py-[0.35rem] px-2 border-none outline-none' placeholder='Email: example123@gmail.com' />
-              <input 
-                type="text" 
-                className='text-start rounded-md text-black align-text-top whitespace-normal w-[300px] min-h-[150px] text-[15px] py-[0.35rem] px-2 border-none outline-none' 
-                placeholder='Share Something'
+              <textarea 
+                  className='rounded-md text-black w-[300px] min-h-[150px] text-[15px] py-2 px-2 border-none outline-none' 
+                  placeholder='Share Something'
               />
-              <button type='submit' className='bg-blue-800 py-2 mt-5 rounded-xl hover:bg-blue-900 font-bold uppercase text-[13px] text-gray-300'>Submit</button>
+              <button type='submit' className='bg-blue-800 py-2 mt-5 hover:bg-blue-900 font-bold uppercase text-[13px] text-white'>Submit</button>
             </form>
           </div>
 

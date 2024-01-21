@@ -12,10 +12,6 @@
         url: '/roadmap'
     },
     {
-        title: 'about',
-        url: '/about'
-    },
-    {
         title: 'profile',
         url: '/profile'
     },

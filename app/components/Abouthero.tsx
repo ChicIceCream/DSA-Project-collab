@@ -9,8 +9,10 @@ import { poppins } from "../fonts";
 const Abouthero = () => {
   return (
     <div className={`${poppins}`}>
-      <h1 className="text-8xl font-extrabold mb-10 max-lg:text-7xl text-center p-2 text-white">
-        About US
+      <h1 className="text-7xl font-extrabold mb-14 text-center py-24 text-white relative">
+        <span className="relative z-10">About</span>
+        <span className="absolute h-1 w-[14rem] bg-[#d3573b] bottom-14 left-1/2 transform -translate-x-1/2"></span>
+        <span className="relative z-10 ml-7">US</span>
       </h1>
       <div className="w-full h-auto bg-[#33333d] flex justify-around p-10 items-center max-sm:block  max-lg:block">
         <div className="flex my-8">
@@ -32,8 +34,8 @@ const Abouthero = () => {
               className="object-cover w-full h-full rounded-full p-[2px]"
             />
           </span>
-          <span className="block bg-gray-100 max-sm:w-[200px] max-sm:h-[200px] ml-[-150px] w-[230px] h-[230px] rounded-full overflow-hidden border-4 border-white z-20" />
-          <span className="block bg-gray-100 max-sm:w-[200px] max-sm:h-[200px] ml-[-150px] w-[230px] h-[230px] rounded-full overflow-hidden border-4 border-white z-10" />
+          <span className="block bg-gray-400 max-sm:w-[200px] max-sm:h-[200px] ml-[-150px] w-[230px] h-[230px] rounded-full overflow-hidden border-4 border-white z-20" />
+          <span className="block bg-gray-400 max-sm:w-[200px] max-sm:h-[200px] ml-[-150px] w-[230px] h-[230px] rounded-full overflow-hidden border-4 border-white z-10" />
         </div>
 
         <div className="w-auto max-w-[600px] text-left whitespace-normal max-sm:w-auto py-6 mb-6">

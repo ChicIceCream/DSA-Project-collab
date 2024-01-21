@@ -14,7 +14,7 @@ const Navbar = () => {
   console.log(menuOpen);
 
   return (
-    <nav className="p-7 border-b-2 border-gray-700 bg-[#090909] text-white sticky top-0 left-0 z-[3000]">
+    <nav className="p-5 border-b-2 border-gray-800 bg-[#020202] text-white sticky top-0 left-0 z-[3000]">
       <div className="container mx-auto flex justify-between items-center mt-2">
         <Link
           href="/hero"
